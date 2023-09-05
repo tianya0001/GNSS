@@ -47,7 +47,8 @@ dataBB = rxFrameData .* dopplerFreqExp;
 
 %%% Average the input signal
 dataBB = reshape(dataBB, averFactor, length(dataBB)/averFactor);
-dataBB = mean(dataBB, 1);
+% dataBB = mean(dataBB, 1);
+dataBB = dataBB(1, :);
 
 %%% Convert signal to DBZP format matix.
 dataBB = reshape(dataBB, numSamplesPerBlock, numBlocks);

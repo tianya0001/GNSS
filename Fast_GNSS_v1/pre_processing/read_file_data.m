@@ -80,7 +80,7 @@ else
             end
             
 %         case 'ANALOG_DATA_-21dB.bin'
-        case 'ANALOG_DATA_-23dB.bin'
+        case 'ANALOG_DATA_-31dB.bin'
 %         case 'ANALOG_DATA_-49dB.bin'
             mOneIdx   = rawData == 1;
             mThreeIdx = rawData == 3;

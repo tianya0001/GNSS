@@ -1,1 +1,1 @@
-NTLab_Bands_GPS_GLONASS_L12.bin
+ANALOG_DATA_-39dB.bin

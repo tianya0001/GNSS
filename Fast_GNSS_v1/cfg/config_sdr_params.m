@@ -140,7 +140,7 @@ for fileName=sdrParams.stateParams.fileNames
                 dataParams.selectedChannel  = 1;
 
 %               case 'ANALOG_DATA_-21dB.bin'        
-              case 'ANALOG_DATA_-23dB.bin'
+              case 'ANALOG_DATA_-31dB.bin'
 %               case 'ANALOG_DATA_-49dB.bin'
                 dataParams.intermFreqHz     = 6.5e6;  % Intermediate frequency
                 dataParams.samplingFreqHz   = 26e6; % Sampling frequency
