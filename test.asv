@@ -1,0 +1,7 @@
+close all;
+clear;
+clc;
+
+x = 1:100;
+y = reshape(x, 5, 20);
+s = s

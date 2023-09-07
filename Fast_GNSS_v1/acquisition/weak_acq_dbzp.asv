@@ -87,18 +87,15 @@ for prnIdx = 1:numPrns
         s = size(parCorrOutput);
         temp = zeros(s);
         for m = 1:s(2)
-            sum = 0+0j;
-            sum = sum + parCorrOutput(end, m)*conj(parCorrOutput(1, m));
-            temp(1, m) = sum;
+            temp(1, m) = parCorrOutput(end-1, m)*conj()
             for n = 2:s(1)
-                sum = sum + parCorrOutput(n-1, m)*conj(parCorrOutput(n, m));
-                temp(n, m) = sum;
+                
             end
         end
         
         %%% Put partial correlation results in the buffer    
         circCorrPartial((permIdx-1)*numSamplesPerBlock+1:permIdx*numSamplesPerBlock, :) = ...
-            temp(1:numSamplesPerBlock, :);
+            parCorrOutput(1:numSamplesPerBlock, :);
     end
     
     %%% FFT across the columsn (doppler bins)
